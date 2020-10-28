@@ -2,7 +2,6 @@ package net_sniff
 
 import (
 	"fmt"
-
 	"regexp"
 
 	"github.com/google/gopacket"

@@ -2,8 +2,9 @@ package events_stream
 
 import (
 	"fmt"
-	"github.com/bettercap/bettercap/modules/wifi"
 	"strings"
+
+	"github.com/bettercap/bettercap/modules/wifi"
 
 	"github.com/bettercap/bettercap/network"
 	"github.com/bettercap/bettercap/session"

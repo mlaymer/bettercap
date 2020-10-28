@@ -1,8 +1,9 @@
 package packets
 
 import (
-	"github.com/google/gopacket/layers"
 	"net"
+
+	"github.com/google/gopacket/layers"
 )
 
 func NewUDPProbe(from net.IP, from_hw net.HardwareAddr, to net.IP, port int) (error, []byte) {

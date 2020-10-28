@@ -1,8 +1,9 @@
 package packets
 
 import (
-	"github.com/mdlayher/dhcp6"
 	"testing"
+
+	"github.com/mdlayher/dhcp6"
 )
 
 func TestDHCP6OptDNSServers(t *testing.T) {

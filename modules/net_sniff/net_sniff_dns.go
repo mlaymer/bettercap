@@ -1,9 +1,10 @@
 package net_sniff
 
 import (
+	"strings"
+
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
-	"strings"
 
 	"github.com/evilsocket/islazy/tui"
 )

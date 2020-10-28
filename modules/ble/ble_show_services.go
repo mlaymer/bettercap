@@ -9,8 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bettercap/bettercap/network"
 	"github.com/bettercap/gatt"
+
+	"github.com/bettercap/bettercap/network"
 
 	"github.com/evilsocket/islazy/tui"
 )

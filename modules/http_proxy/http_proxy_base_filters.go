@@ -3,8 +3,8 @@ package http_proxy
 import (
 	"io/ioutil"
 	"net/http"
-	"strings"
 	"strconv"
+	"strings"
 
 	"github.com/elazarl/goproxy"
 
@@ -74,7 +74,7 @@ func (p *HTTPProxy) isScriptInjectable(res *http.Response) (bool, string) {
 	return false, ""
 }
 
-func (p *HTTPProxy) doScriptInjection(res *http.Response, cType string) (error) {
+func (p *HTTPProxy) doScriptInjection(res *http.Response, cType string) error {
 	defer res.Body.Close()
 
 	raw, err := ioutil.ReadAll(res.Body)
