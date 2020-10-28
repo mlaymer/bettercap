@@ -1,9 +1,10 @@
 package session
 
 import (
-	"github.com/bettercap/readline"
 	"regexp"
 	"sync"
+
+	"github.com/bettercap/readline"
 )
 
 type CommandHandler struct {

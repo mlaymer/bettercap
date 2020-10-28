@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"net/url"
 	"regexp"
-	"strings"
 	"strconv"
+	"strings"
 
 	"github.com/bettercap/bettercap/log"
-	"github.com/bettercap/bettercap/session"
 	"github.com/bettercap/bettercap/modules/dns_spoof"
+	"github.com/bettercap/bettercap/session"
 
 	"github.com/elazarl/goproxy"
 	"github.com/google/gopacket"
@@ -23,9 +23,9 @@ import (
 )
 
 var (
-	httpsLinksParser = regexp.MustCompile(`https://[^"'/]+`)
+	httpsLinksParser   = regexp.MustCompile(`https://[^"'/]+`)
 	domainCookieParser = regexp.MustCompile(`; ?(?i)domain=.*(;|$)`)
-	flagsCookieParser = regexp.MustCompile(`; ?(?i)(secure|httponly)`)
+	flagsCookieParser  = regexp.MustCompile(`; ?(?i)(secure|httponly)`)
 )
 
 type SSLStripper struct {
@@ -168,7 +168,7 @@ func (s *SSLStripper) fixCookies(res *http.Response) {
 			origDomain := origParts[len(origParts)-2] + "." + origParts[len(origParts)-1]
 			strippedDomain := strippedParts[len(strippedParts)-2] + "." + strippedParts[len(strippedParts)-1]
 
-			log.Info("[%s] Fixing cookies on %s", tui.Green("sslstrip"),tui.Bold(strippedHost.Hostname))
+			log.Info("[%s] Fixing cookies on %s", tui.Green("sslstrip"), tui.Bold(strippedHost.Hostname))
 			cookies := make([]string, len(res.Header["Set-Cookie"]))
 			// replace domain and strip "secure" flag for each cookie
 			for i, cookie := range res.Header["Set-Cookie"] {

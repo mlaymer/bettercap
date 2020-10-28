@@ -66,7 +66,7 @@ func NewHttpProxy(s *session.Session) *HttpProxy {
 			return mod.Stop()
 		}))
 
-		mod.InitState("stripper")
+	mod.InitState("stripper")
 
 	return mod
 }

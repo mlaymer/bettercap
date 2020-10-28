@@ -114,7 +114,7 @@ func (j *JSRequest) SetHeader(name, value string) {
 	value = strings.TrimSpace(value)
 
 	if strings.ToLower(name) == "content-type" {
-		j.ContentType = value;
+		j.ContentType = value
 	}
 
 	headers := strings.Split(j.Headers, "\r\n")

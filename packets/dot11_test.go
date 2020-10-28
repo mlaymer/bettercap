@@ -1,11 +1,12 @@
 package packets
 
 import (
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/layers"
 	"net"
 	"reflect"
 	"testing"
+
+	"github.com/google/gopacket"
+	"github.com/google/gopacket/layers"
 )
 
 func TestDot11Vars(t *testing.T) {

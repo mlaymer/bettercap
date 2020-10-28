@@ -4,9 +4,10 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
-	"golang.org/x/net/html"
 	"net/http"
 	"strings"
+
+	"golang.org/x/net/html"
 )
 
 func isTitleElement(n *html.Node) bool {

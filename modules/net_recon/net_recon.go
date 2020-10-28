@@ -1,8 +1,9 @@
 package net_recon
 
 import (
-	"github.com/bettercap/bettercap/modules/utils"
 	"time"
+
+	"github.com/bettercap/bettercap/modules/utils"
 
 	"github.com/bettercap/bettercap/network"
 	"github.com/bettercap/bettercap/session"

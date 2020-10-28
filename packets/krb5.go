@@ -1,13 +1,12 @@
 package packets
 
 import (
+	"encoding/asn1"
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"strconv"
 	"time"
-
-	"encoding/asn1"
-	"encoding/hex"
 )
 
 const (

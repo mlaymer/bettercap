@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"strings"
-
 	"runtime"
+	"strings"
 
 	"github.com/bettercap/bettercap/core"
 	"github.com/bettercap/bettercap/log"
